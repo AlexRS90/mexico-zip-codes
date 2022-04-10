@@ -40,8 +40,8 @@ gem 'rack-cors', require: 'rack/cors'
 
 gem 'rswag'
 gem 'rswag-api'
-gem 'rswag-ui'
 gem 'rswag-specs'
+gem 'rswag-ui'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

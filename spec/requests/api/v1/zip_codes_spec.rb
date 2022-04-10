@@ -1,7 +1,6 @@
 require 'swagger_helper'
 
 RSpec.describe 'api/v1/zip_codes', type: :request do
-
   path '/api/v1/zip-codes/{zip_code}' do
     # You'll want to customize the parameter types...
     parameter name: 'zip_code', in: :path, type: :string, description: 'zip_code'
