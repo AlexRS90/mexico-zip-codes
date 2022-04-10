@@ -1,0 +1,24 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/zip-codes/{zip_code}":
+    parameters:
+    - name: zip_code
+      in: path
+      description: zip_code
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show zip_code
+      responses:
+        '200':
+          description: successful
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: 127.0.0.1:3000/
