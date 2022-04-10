@@ -16,7 +16,7 @@ class Api::V1::ZipCodesController < ApplicationController
       }
     end
     if zip_code.any?
-      render json: { status: 'success', data: zip_code }, status: 201
+      render json: { status: 'success', data: zip_code }, status: 200
     else
       render json: {}, status: :not_found
     end
