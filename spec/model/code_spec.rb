@@ -1,16 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe Code, type: :model do
-  before do 
+  before do
     Code.create(
-      zip_code: 96518,
+      zip_code: 96_518,
       locality: 'Coatzacoalcos',
       federal_entity: 'Veracruz de Ignacio de la Llave',
       settlements: [
         {
-          "name": "Playa Sol",
-          "zone_type": "Urbano",
-          "settlement_type": "Colonia"
+          name: 'Playa Sol',
+          zone_type: 'Urbano',
+          settlement_type: 'Colonia'
         }
       ],
       municipality: 'Coatzacoalcos'
@@ -23,7 +23,7 @@ RSpec.describe Code, type: :model do
   end
 
   it 'has 1 record' do
-    expect(Code.count).to eq(51988)
+    expect(Code.count).to eq(51_988)
   end
 
   it 'expects locality to not be empty' do
